@@ -59,7 +59,6 @@ spec:
     image:
       pullPolicy: IfNotPresent
       repository: rook/ceph
-      tag: VERSION
     logLevel: INFO
     monitoring:
       enabled: false
