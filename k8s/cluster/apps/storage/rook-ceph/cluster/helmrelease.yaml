@@ -14,7 +14,6 @@ spec:
         name: rook-release
       dependsOn:
         - name: rook-ceph-operator
-          namespace: rook-ceph
   interval: 1m0s
   targetNamespace: rook-ceph
   values:
