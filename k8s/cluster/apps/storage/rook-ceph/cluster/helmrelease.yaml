@@ -11,7 +11,7 @@ spec:
       reconcileStrategy: ChartVersion
       sourceRef:
         kind: HelmRepository
-        name: rook-release
+        name: rook-ceph-charts
   interval: 1m0s
   targetNamespace: rook-ceph
   values:
