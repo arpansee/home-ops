@@ -12,8 +12,6 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: rook-release
-      dependsOn:
-        - name: rook-ceph-operator
   interval: 1m0s
   targetNamespace: rook-ceph
   values:
