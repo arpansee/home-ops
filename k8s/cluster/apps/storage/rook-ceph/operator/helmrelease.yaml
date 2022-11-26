@@ -56,9 +56,6 @@ spec:
     enableDiscoveryDaemon: false
     enableOBCWatchOperatorNamespace: true
     hostpathRequiresPrivileged: false
-    image:
-      pullPolicy: IfNotPresent
-      repository: rook/ceph
     logLevel: INFO
     monitoring:
       enabled: false
