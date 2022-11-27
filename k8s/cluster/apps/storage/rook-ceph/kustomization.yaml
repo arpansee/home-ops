@@ -5,7 +5,5 @@ namespace: rook-ceph
 resources:
   - ./cluster
   - ./operator
-  - https://raw.githubusercontent.com/rook/rook/release-1.10/deploy/examples/crds.yaml
-  - ./common
   #- ./rook-direct-mount
   #- ./dashboard
