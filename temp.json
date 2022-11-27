@@ -1,0 +1,25 @@
+{
+  "apiVersion": "v1",
+  "kind": "Namespace",
+  "metadata": {
+    "creationTimestamp": "2022-11-26T23:58:42Z",
+    "deletionTimestamp": "2022-11-27T00:04:11Z",
+    "labels": {
+      "app.kubernetes.io/instance": "flux-system",
+      "app.kubernetes.io/part-of": "flux",
+      "app.kubernetes.io/version": "v0.37.0",
+      "kubernetes.io/metadata.name": "flux-system",
+      "pod-security.kubernetes.io/warn": "restricted",
+      "pod-security.kubernetes.io/warn-version": "latest"
+    },
+    "name": "flux-system",
+    "resourceVersion": "33635",
+    "uid": "50ddf493-6f29-418a-b780-cc0908391a7f"
+  },
+  "spec": {
+    "finalizers": []
+  },
+  "status": {
+    "phase": "Terminating"
+  }
+}

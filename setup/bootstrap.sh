@@ -42,13 +42,12 @@ installFlux() {
     exit 1
   fi
   flux bootstrap github \
-    --owner="$OWNER" \
-    --repository="$REPO" \
-    --branch "$BRANCH" \
-    --private=false \
+    --owner="$GITHUB_USER" \
+    --repository=home-ops \
+    --branch=main \
     --personal \
     --network-policy=false \
-    --path=k8s/cluster/ \
+    --path=./k8s/cluster \
     --components-extra=image-reflector-controller,image-automation-controller
 
   FLUX_INSTALLED=$?
