@@ -19,9 +19,6 @@ spec:
   values:
     monitoring:
       enabled: false
-    cephClusterSpec:
-      network:
-        provider: host
       crashCollector:
         disable: false
       dashboard:
