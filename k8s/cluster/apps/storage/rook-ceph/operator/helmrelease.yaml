@@ -62,12 +62,6 @@ spec:
     nodeSelector: {}
     pspEnable: true
     rbacEnable: true
-    resources:
-      limits:
-        memory: 258Mi
-      requests:
-        cpu: 10m
-        memory: 128Mi
     tolerations: []
     unreachableNodeTolerationSeconds: 5
 
