@@ -24,7 +24,6 @@ need "flux"
 need "openssl"
 need "task"
 
-
 message "Loading environment variables"
  . "$REPO_ROOT"/setup/.env
 
@@ -42,8 +41,8 @@ installFlux() {
     exit 1
   fi
   flux bootstrap github \
-    --owner=arpansee \
-    --repository=home-ops \
+    --owner="$GITHUB_USER" \
+    --repository="$REPO" \
     --branch=main \
     --personal \
     --path=./k8s/cluster
@@ -56,7 +55,6 @@ installFlux() {
 }
 
 installFlux
-#"$REPO_ROOT"/setup/bootstrapobjects.sh
 
 message "all done!"
 kubectl get nodes -o=wide
