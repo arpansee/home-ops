@@ -42,13 +42,11 @@ installFlux() {
     exit 1
   fi
   flux bootstrap github \
-    --owner="$GITHUB_USER" \
+    --owner=arpansee \
     --repository=home-ops \
     --branch=main \
     --personal \
-    --network-policy=false \
-    --path=./k8s/cluster \
-    --components-extra=image-reflector-controller,image-automation-controller
+    --path=./k8s/cluster
 
   FLUX_INSTALLED=$?
   if [ $FLUX_INSTALLED != 0 ]; then
