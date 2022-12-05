@@ -8,4 +8,4 @@ spec:
   template:
     spec:
       nodeSelector:
-        node-role.kubernetes.io: master
+        kubernetes.io/arch: arm64
