@@ -45,7 +45,9 @@ installFlux() {
     --repository="$REPO" \
     --branch=main \
     --personal \
-    --path=./k8s/cluster
+    --network-policy=false \
+    --path=./k8s/cluster \
+    --components-extra=image-reflector-controller,image-automation-controller
 
   FLUX_INSTALLED=$?
   if [ $FLUX_INSTALLED != 0 ]; then
