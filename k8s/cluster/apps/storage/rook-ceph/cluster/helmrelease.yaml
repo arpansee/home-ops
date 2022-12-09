@@ -26,7 +26,7 @@ spec:
         urlPrefix: /
         ssl: false
       mon:
-        count: 3
+        count: 2
         allowMultiplePerNode: true
       mgr:
         count: 1
