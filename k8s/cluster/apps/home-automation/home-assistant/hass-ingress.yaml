@@ -13,7 +13,4 @@ spec:
     - kind: Service
       name: home-assistant
       namespace: default
-      ports:
-        - protocol: TCP
-          port: 80
-          targetPort: 8123
+      port: 80
