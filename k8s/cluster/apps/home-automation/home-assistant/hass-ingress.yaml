@@ -5,11 +5,11 @@ metadata:
   namespace: default
 spec:
   entryPoints:                     
-    - web
+  - web
   routes:                           
   - kind: Rule
-    match: Host(`hass.rupamarpan.io`) 
+    match: Host("hass.rupamarpan.io") 
     services:                       
-      name: home-assistant
+    - name: home-assistant
       namespace: default
       port: 80
