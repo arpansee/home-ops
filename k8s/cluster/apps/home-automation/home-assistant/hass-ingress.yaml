@@ -9,10 +9,8 @@ spec:
   routes:                           
   - kind: Rule
     match: Host(`hass.rupamarpan.io`) 
-    priority: 10                    
     services:                       
     - kind: Service
       name: home-assistant
       namespace: default
       port: 8123
-      scheme: http
