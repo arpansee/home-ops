@@ -5,7 +5,7 @@ metadata:
   namespace: default
 spec:
   entryPoints:
-    - web:
+    web:
       address: :80
   routes:                           
   - kind: Rule
