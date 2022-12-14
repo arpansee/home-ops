@@ -8,7 +8,7 @@ spec:
   - web
   routes:                           
   - kind: Rule
-    match: Host("hass.rupamarpan.io") 
+    match: Host("hass.rupamarpan.192.168.50.115.sslip.io") 
     services:                       
     - name: home-assistant
       namespace: default
