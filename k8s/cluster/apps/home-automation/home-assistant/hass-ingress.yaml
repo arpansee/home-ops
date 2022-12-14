@@ -12,7 +12,7 @@ spec:
     priority: 10                    
     services:                       
     - kind: Service
-      name: hass-service
+      name: home-assistant
       namespace: default
       port: 8123
       scheme: http
