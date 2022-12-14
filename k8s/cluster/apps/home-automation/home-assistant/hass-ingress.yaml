@@ -11,7 +11,7 @@ spec:
     match: Host(`hass.rupamarpan.io`) 
     priority: 10                    
     services:                       
-    - kind: TraefikService
+    - kind: Service
       name: home-assistant
       namespace: default
       port: 8123
