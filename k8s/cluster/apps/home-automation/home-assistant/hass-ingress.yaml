@@ -4,8 +4,9 @@ metadata:
   name: hass-ingressroute
   namespace: default
 spec:
-  entryPoints:                      
-    - web
+  entryPoints:
+    - web:
+      address: :80
   routes:                           
   - kind: Rule
     match: Host(`hass.rupamarpan.io`) 
