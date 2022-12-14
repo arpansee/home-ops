@@ -1,0 +1,18 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: hass-ingressroute
+  namespace: default
+spec:
+  entryPoints:                      
+    - web
+  routes:                           
+  - kind: Rule
+    match: Host(`hass.rupamarpan.io`) 
+    priority: 10                    
+    services:                       
+    - kind: Service
+      name: hass-service
+      namespace: default
+      port: 8123
+      scheme: http
