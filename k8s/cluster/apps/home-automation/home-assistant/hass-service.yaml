@@ -11,3 +11,6 @@ spec:
   - port: 8123
     protocol: TCP
     targetPort: 8123
+    nodePort: 30438
+  type: NodePort
+  sessionAffinity: None
