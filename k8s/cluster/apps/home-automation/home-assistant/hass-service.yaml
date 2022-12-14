@@ -10,6 +10,5 @@ metadata:
 spec:
   ports:
     - name: home-assistant
-      protocol: TCP
       port: 80
       targetPort: 8123
