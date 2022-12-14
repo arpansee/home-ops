@@ -4,9 +4,8 @@ metadata:
   name: hass-ingressroute
   namespace: default
 spec:
-  entryPoints:
-    web:
-      address: :80
+  entryPoints:                     
+    - web
   routes:                           
   - kind: Rule
     match: Host(`hass.rupamarpan.io`) 
@@ -14,4 +13,5 @@ spec:
     - kind: Service
       name: home-assistant
       namespace: default
-      port: 8123
+      port: 80
+      targetPort: 8123
