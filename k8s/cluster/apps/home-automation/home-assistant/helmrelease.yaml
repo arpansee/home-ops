@@ -27,6 +27,7 @@ spec:
       main:
         type: LoadBalancer
         loadBalancerIP: 192.168.50.151
+        nodePort: 8123
     ingress:
       main:
         enabled: true
