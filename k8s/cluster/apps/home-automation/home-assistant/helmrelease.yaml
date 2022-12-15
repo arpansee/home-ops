@@ -26,8 +26,6 @@ spec:
     service:
       main:
         type: LoadBalancer
-        loadBalancerIP: 192.168.50.151
-        nodePort: 8123
     ingress:
       main:
         enabled: true
@@ -36,8 +34,14 @@ spec:
         annotations: 
           traefik.ingress.kubernetes.io/router.entrypoints: web
         ingressClassName: "traefik"
+        tls:
+        - hosts:
+          - "hass.rupamarpan.192.168.50.151.sslip.io"
         hosts:
         - host: hass.rupamarpan.192.168.50.151.sslip.io
           paths:
           - path: /
             pathType: Prefix
+    tolerations:
+    - key: "arm"
+      operator: "Exists"
