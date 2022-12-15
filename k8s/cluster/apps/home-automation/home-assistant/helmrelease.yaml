@@ -19,5 +19,7 @@ spec:
     image:
       repository: homeassistant/home-assistant
       tag: 2022.12.3
+    env:
+      TZ: "Pacific/Auckland"
     hostNetwork: true
-    dnsPolicy: ClusterFirst
+    dnsPolicy: ClusterFirstWithHostNet
