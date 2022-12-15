@@ -48,6 +48,4 @@ spec:
     persistence:
       config:
         enabled: true
-        storageClass: "local-path"
-        accessMode: ReadWriteOnce
         existingClaim: hass-pvc
