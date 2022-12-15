@@ -27,7 +27,7 @@ spec:
       main:
         ports:
           http:
-            port: 80
+            port: 8123
             targetPort: 8123
     ingress:
       main:
