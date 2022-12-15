@@ -23,3 +23,11 @@ spec:
       TZ: "Pacific/Auckland"
     hostNetwork: true
     dnsPolicy: ClusterFirstWithHostNet
+    service:
+      main:
+        ports:
+          http:
+            port: 8123
+    ingress:
+      main:
+        enabled: true
