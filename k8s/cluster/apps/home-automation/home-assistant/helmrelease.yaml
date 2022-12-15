@@ -26,6 +26,7 @@ spec:
     service:
       main:
         type: LoadBalancer
+        port: 8123
     ingress:
       main:
         enabled: true
