@@ -37,7 +37,7 @@ spec:
           traefik.ingress.kubernetes.io/router.entrypoints: web
         ingressClassName: "traefik"
         hosts:
-        - host: hass.rupamarpan.sslip.io
+        - host: hass.rupamarpan.192.168.50.151.sslip.io
           paths:
           - path: /
             pathType: Prefix
