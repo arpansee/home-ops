@@ -20,3 +20,4 @@ spec:
       repository: homeassistant/home-assistant
       tag: 2022.12.3
     hostNetwork: true
+    dnsPolicy: ClusterFirst
