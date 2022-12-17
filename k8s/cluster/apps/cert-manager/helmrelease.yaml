@@ -69,7 +69,7 @@ spec:
       pullPolicy: IfNotPresent
       repository: quay.io/jetstack/cert-manager-controller
     ingressShim: {}
-    installCRDs: true
+    installCRDs: false
     namespace: ""
     nodeSelector:
       kubernetes.io/os: linux
