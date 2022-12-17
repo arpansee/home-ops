@@ -105,7 +105,7 @@ spec:
           - ALL
       enabled: true
       extraArgs:
-        - --dns01-recursive-nameservers=1.1.1.1:53,9.9.9.9:53
+        - --dns01-self-check-nameservers=8.8.8.8:53,1.1.1.1:53
         - --dns01-recursive-nameservers-only
       image:
         pullPolicy: IfNotPresent
