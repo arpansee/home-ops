@@ -36,9 +36,9 @@ spec:
         ingressClassName: "traefik"
         tls:
         - hosts:
-          - "hass.rupamarpan.192.168.50.151.sslip.io"
+          - "hass.rupamarpan.link"
         hosts:
-        - host: hass.rupamarpan.192.168.50.151.sslip.io
+        - host: hass.rupamarpan.link
           paths:
           - path: /
             pathType: Prefix
