@@ -28,6 +28,7 @@ spec:
         bucket: k3sbackups
         config:
           region: ap-southeast-2
+          profile: "default"
       volumeSnapshotLocation:
         name: aws
         config:
