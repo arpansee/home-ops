@@ -24,7 +24,7 @@ spec:
         TZ: "Pacific/Auckland"
       provider: aws
       backupStorageLocation:
-        name: default
+        name: aws
         bucket: k3sbackups
         config:
           region: ap-southeast-2
