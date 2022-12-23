@@ -45,6 +45,8 @@ spec:
     tolerations:
     - key: "arm"
       operator: "Exists"
+    podAnnotations:
+      backup.velero.io/backup-volumes: hass-pvc
     persistence:
       config:
         enabled: true
