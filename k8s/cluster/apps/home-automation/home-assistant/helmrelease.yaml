@@ -50,7 +50,8 @@ spec:
       operator: "Exists"
     podAnnotations:
       backup.velero.io/backup-volumes: hass-pvc
-    nodeSelector: "k3smaster1"
+    nodeSelector: 
+      node-role.kubernetes.io/master: true
     persistence:
       config:
         enabled: true
