@@ -30,7 +30,6 @@ spec:
       main:
         enabled: true
         primary: true
-        nameOverride:
         annotations: 
           traefik.ingress.kubernetes.io/router.entrypoints: web
         ingressClassName: "traefik"
